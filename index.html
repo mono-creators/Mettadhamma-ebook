@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Sukhumvit Set Light'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Sukhumvit Set'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Sukhumvit Set Light'; min-height: 22.0px}
+    span.s1 {font: 14.0px 'Sukhumvit Set Light'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="th"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;</span>เมตตาธรรม ธรรมคำสอน หลวงปู่แบน ธนากโร | <span class="s1">Mettadhamma&lt;/title&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #222;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#flipbook {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#flipbook .page {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 10px rgba(0,0,0,0.5);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#flipbook .page img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: contain;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.instructions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* ปรับให้รองรับหน้าจอ มือถือ / แท็บเล็ต อัตโนมัติ */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media screen and (max-width: 950px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>#flipbook {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100% !important;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 70vh !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- โหลด jQuery และ Turn.js --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="flipbook"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ระบบจะดึงรูปภาพจากโฟลเดอร์ images มาแสดงอัตโนมัติ 100 หน้า --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="instructions"&gt;คลิกหรือใช้นิ้วปัด/กดมุมกระดาษเพื่อพลิกหน้า&lt;/div&gt;</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// สร้างหน้าหนังสือ 100 หน้าอัตโนมัติ</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let i = 1; i &lt;= 100; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>$('#flipbook').append('&lt;div class="page"&gt;&lt;img src="images/' + i + '.jpg" alt="Page ' + i + '"&gt;&lt;/div&gt;');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>$(document).ready(function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>$('#flipbook').turn({</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 900,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 600,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>autoCenter: true,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gradients: true</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ควบคุมด้วยคีย์บอร์ดลูกศรซ้าย-ขวา (สำหรับคอมพิวเตอร์)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>$(keydown = function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (e.keyCode == 37) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>$('#flipbook').turn('previous');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (e.keyCode == 39) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>$('#flipbook').turn('next');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p3"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
